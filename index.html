@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Update System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+    <div class="max-w-3xl mx-auto py-10 px-6">
+        <h1 class="text-4xl font-bold text-blue-600 mb-4">🛠️ Auto Update System for Windows App</h1>
+        <p class="mb-6">
+            ระบบอัปเดตอัตโนมัติสำหรับแอปพลิเคชัน Windows โดยใช้ Python และ GitHub Pages<br />
+            รองรับการเช็กเวอร์ชัน ดาวน์โหลด update.zip แตกไฟล์ และเปิดแอปใหม่อัตโนมัติ
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-2">📁 โครงสร้างโปรเจกต์</h2>
+        <pre class="bg-gray-200 p-4 rounded">
+auto-update-deploy/
+├── version.txt         # ไฟล์บอกเวอร์ชันล่าสุด
+├── update.zip          # แพ็กเกจของโปรแกรมเวอร์ชันใหม่ (.exe + อื่น ๆ)
+    </pre>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-2">🧠 หลักการทำงาน</h2>
+        <ol class="list-decimal ml-6 space-y-1">
+            <li>รัน <code>auto_updater.exe</code></li>
+            <li>โหลด <code>version.txt</code> จาก GitHub Pages</li>
+            <li>เทียบเวอร์ชันกับในเครื่อง</li>
+            <li>หากเวอร์ชันใหม่กว่า:
+                <ul class="list-disc ml-6">
+                    <li>ปิด <code>app.exe</code></li>
+                    <li>ดาวน์โหลดและแตก <code>update.zip</code></li>
+                    <li>เขียนเวอร์ชันใหม่</li>
+                    <li>เปิดแอปอีกครั้ง</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-2">🐍 ตัวอย่างการตั้งค่า</h2>
+        <pre class="bg-gray-200 p-4 rounded text-sm">
+UPDATE_URL = "https://kaisanthia01.github.io/auto-update-deploy/version.txt"
+ZIP_URL = "https://kaisanthia01.github.io/auto-update-deploy/update.zip"
+APP_NAME = "app.exe"
+    </pre>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-2">🏗️ วิธี Build โปรแกรม</h2>
+        <pre class="bg-gray-200 p-4 rounded text-sm">
+pyinstaller auto_updater.py --onefile --name auto_updater
+pyinstaller app.py --onefile --name app
+    </pre>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-2">🚀 วิธี Deploy ผ่าน GitHub Pages</h2>
+        <ul class="list-disc ml-6 space-y-1">
+            <li>สร้าง GitHub Repo เช่น <code>auto-update-deploy</code></li>
+            <li>วางไฟล์ <code>version.txt</code> และ <code>update.zip</code> ใน root</li>
+            <li>ไปที่ <strong>Settings > Pages</strong> แล้วเลือก Source: <code>main</code> branch</li>
+            <li>เปิด URL: <code>https://kaisanthia01.github.io/auto-update-deploy/</code></li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-2">🔐 ความปลอดภัยเบื้องต้น</h2>
+        <ul class="list-disc ml-6 space-y-1">
+            <li>ตรวจสอบว่า <code>update.zip</code> มาจากแหล่งที่ไว้ใจได้</li>
+            <li>สามารถเพิ่มระบบ hash verification หรือ digital signature ได้ในอนาคต</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-2">✅ ตัวอย่าง version.txt</h2>
+        <pre class="bg-gray-200 p-4 rounded">
+1.0.1
+    </pre>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-2">📬 ติดต่อ</h2>
+        <p>
+            ผู้พัฒนา: <a href="https://github.com/kaisanthia01" class="text-blue-600 underline">kaisanthia01</a><br />
+            เปิดรับคำแนะนำและ Pull Requests 👍
+        </p>
+    </div>
+</body>
+
+</html>
