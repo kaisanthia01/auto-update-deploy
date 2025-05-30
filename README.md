@@ -7,8 +7,8 @@ Auto Update System
 
 ## 📁 โครงสร้างโปรเจกต์
 
-auto-update-deploy/
-├── version.txt # ไฟล์บอกเวอร์ชันล่าสุด
+auto-update-deploy/<br>
+├── version.txt # ไฟล์บอกเวอร์ชันล่าสุด<br>
 ├── update.zip # แพ็กเกจของโปรแกรมเวอร์ชันใหม่ (.exe + อื่น ๆ)
 
 ## 🧠 หลักการทำงาน
@@ -24,9 +24,9 @@ auto-update-deploy/
 
 ## 🐍 ตัวอย่างการตั้งค่า
 
-UPDATE_URL = "https://kaisanthia01.github.io/auto-update-deploy/version.txt"
-ZIP_URL = "https://kaisanthia01.github.io/auto-update-deploy/update.zip"
-APP_NAME = "app.exe"
+1. UPDATE_URL = "https://kaisanthia01.github.io/auto-update-deploy/version.txt"
+2. ZIP_URL = "https://kaisanthia01.github.io/auto-update-deploy/update.zip"
+3. APP_NAME = "app.exe"
 
 ## 🏗️ วิธี Build โปรแกรม
 
