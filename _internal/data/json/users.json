@@ -1,0 +1,8 @@
+{
+  "admin": {
+    "password": "$2b$12$VGke0ke7TkYItBkmNhDfjeRvcatv3Uh0nR4IKeP3XQmR2YLAXPiee"
+  },
+  "weather": {
+    "password": "$2b$12$0gvcGikCYQ0WD0eOSWsiHuoK88rKTyN9bQNzrpivQwwTLxlis1M1K"
+  }
+}

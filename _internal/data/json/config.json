@@ -1,0 +1,28 @@
+{
+    "settings": {
+        "url": "http://www.gts.tmd.go.th/php/AllData.php?alldate=/Synoptic/{day}-{month}{year}.T{time}&tyear={ythai}",
+        "url_thai": "http://www.gts.tmd.go.th/php/all.php?ld=VTBB&pt=/{ythai}/All_Data/{day}-{month}{year}.T{time}",
+        "url_china": "http://www.gts.tmd.go.th/php/all.php?ld=BABJ&pt=/{ythai}/All_Data/{day}-{month}{year}.T{time}",
+        "url_laos": "http://www.gts.tmd.go.th/php/all.php?ld=VLIV&pt=/{ythai}/All_Data/{day}-{month}{year}.T{time}",
+        "url_myanmar": "http://www.gts.tmd.go.th/php/all.php?ld=VBRR&pt=/{ythai}/All_Data/{day}-{month}{year}.T{time}",
+        "url_vietnam": "http://www.gts.tmd.go.th/php/all.php?ld=VTBB&pt=/{ythai}/All_Data/{day}-{month}{year}.T{time}",
+        "url_singapore": "http://www.gts.tmd.go.th/php/all.php?ld=WSSS&pt=/{ythai}/All_Data/{day}-{month}{year}.T{time}",
+        "url_indonesia": "http://www.gts.tmd.go.th/php/all.php?ld=WIIX&pt=/{ythai}/All_Data/{day}-{month}{year}.T{time}",
+        "url_malaysia": "http://www.gts.tmd.go.th/php/all.php?ld=WMKK&pt=/{ythai}/All_Data/{day}-{month}{year}.T{time}",
+        "url_details": {
+            "url_thai": "http://www.gts.tmd.go.th/php/all.php?ld=VTBB&pt=/{ythai}/All_Data/{day}-{month}{year}.T{time}",
+            "url_china": "http://www.gts.tmd.go.th/php/all.php?ld=BABJ&pt=/{ythai}/All_Data/{day}-{month}{year}.T{time}",
+            "url_laos": "http://www.gts.tmd.go.th/php/all.php?ld=VLIV&pt=/{ythai}/All_Data/{day}-{month}{year}.T{time}",
+            "url_myanmar": "http://www.gts.tmd.go.th/php/all.php?ld=VBRR&pt=/{ythai}/All_Data/{day}-{month}{year}.T{time}",
+            "url_vietnam": "http://www.gts.tmd.go.th/php/all.php?ld=VTBB&pt=/{ythai}/All_Data/{day}-{month}{year}.T{time}",
+            "url_singapore": "http://www.gts.tmd.go.th/php/all.php?ld=WSSS&pt=/{ythai}/All_Data/{day}-{month}{year}.T{time}",
+            "url_indonesia": "http://www.gts.tmd.go.th/php/all.php?ld=WIIX&pt=/{ythai}/All_Data/{day}-{month}{year}.T{time}",
+            "url_malaysia": "http://www.gts.tmd.go.th/php/all.php?ld=WMKK&pt=/{ythai}/All_Data/{day}-{month}{year}.T{time}"
+        },
+        "url_wind": "http://www.gts.tmd.go.th/php/AllData.php?alldate=/Wind/{day}-{month}{year}.T{time}&tyear={ythai}",
+        "url_skewt": "http://www.gts.tmd.go.th/php/allu.php?ld=VTBB&pt=D:/FTP/{ythai}/Wind/{day}-{month}{year}.T{time}",
+        "base_url": "http://www.gts.tmd.go.th/Pages/NewsSyUp.php",
+        "map_black": "Skew-T-Log-P-BlackAndWhite.pdf",
+        "map_color": "Skew-T-Log-P-Color.pdf"
+    }
+}
